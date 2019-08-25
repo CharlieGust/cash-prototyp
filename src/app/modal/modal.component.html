@@ -1,5 +1,5 @@
 <ion-header>
-    <ion-toolbar text-center>
+    <ion-toolbar text-center color="medium">
       <ion-title >{{modalName}}</ion-title>
     </ion-toolbar>
   </ion-header>
@@ -7,8 +7,8 @@
   <ion-content padding>
     <ion-grid>
       <ion-row >
-        <ion-col >
-          Scan QR-code
+        <ion-col text-center>
+          Original price: {{modalOriginal}}
         </ion-col>
         <ion-col>
           <ion-label color="danger">
@@ -22,8 +22,13 @@
         </ion-col>
       </ion-row>
       <ion-row>
+          <ion-col text-center>
+            Scan QR-code to get TaxFree
+          </ion-col>
+        </ion-row>
+      <ion-row>
         <ion-col text-center>
-          <ion-button (click)="closeModal()">Close Modal</ion-button>
+          <ion-button expand="block" (click)="closeModal()" color="dark">Done</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>

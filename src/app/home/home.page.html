@@ -1,21 +1,39 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      HOME
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
+    <ion-toolbar color="medium">
+      <ion-title>Dashboard</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
 <ion-content>
-    <ion-card class="welcome-card">
-      <ion-item (click)="onSubmit()">
-        <img src="/assets/shapes.svg" alt="" />
-        <ion-card-header>
-          <ion-card-title text-center color="danger">TAX FREE</ion-card-title>
-        </ion-card-header>
-      </ion-item>
-      </ion-card>
-      <ion-card class="welcome-card">
+  <ion-card class="menu" (click)="onSubmit()" color="light">      
+      <img src="/assets/taxfree.jpg" alt="" />
+        <ion-card-content>
+            <p>Lists all products that are duty free, click on a product to view QR-code!</p>
+          </ion-card-content>
+          <ion-card-subtitle text-right>Get TaxFree
+              <ion-icon name="arrow-dropright-circle"></ion-icon>
+          </ion-card-subtitle>
+  </ion-card>
+
+  <ion-card class="menu" (click)="onSubmit()" color="light">      
+      <img src="/assets/inside-the-resturant.jpg" alt="" />
+        <ion-card-content>
+            <p>View our highly regarded resturants</p>
+          </ion-card-content>
+          <ion-card-subtitle text-right>Get resturants
+              <ion-icon name="arrow-dropright-circle"></ion-icon>
+          </ion-card-subtitle>
+  </ion-card>
+  <ion-card class="menu" (click)="onSubmit()" color="light">      
+      <img src="/assets/taxfree.jpg" alt="" />
+        <ion-card-content>
+            <p>Lists all products that are duty free, click on a product to view QR-code!</p>
+          </ion-card-content>
+          <ion-card-subtitle text-right>Get TaxFree
+              <ion-icon name="arrow-dropright-circle"></ion-icon>
+          </ion-card-subtitle>
+  </ion-card>
+      <!-- <ion-card class="welcome-card">
           <ion-item (click)="onSubmit()">
               <img src="/assets/shapes.svg" alt="" />
               <ion-card-header>
@@ -30,7 +48,7 @@
                   <ion-card-title text-center>STORES</ion-card-title>
                 </ion-card-header>
               </ion-item>
-          </ion-card>
+          </ion-card> -->
     <!-- <ion-grid>
         <ion-row >
           <ion

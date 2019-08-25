@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="medium">
     <ion-title>Details</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -7,7 +7,7 @@
 <ion-content padding>
     <form [formGroup]="validations_form"  (ngSubmit)="onSubmit(validations_form.value)">
         <ion-item>
-            <ion-label position="floating" color="primary">Name</ion-label>
+            <ion-label position="floating">Name</ion-label>
             <ion-input type="text" formControlName="name"></ion-input>
           </ion-item>
           <div class="validation-errors">
@@ -19,7 +19,7 @@
           </div>
 
           <ion-item>
-              <ion-label position="floating" color="primary">Last name</ion-label>
+              <ion-label position="floating">Last name</ion-label>
               <ion-input type="text" formControlName="lastname"></ion-input>
             </ion-item>
             <div class="validation-errors">
@@ -31,7 +31,7 @@
             </div>
 
             <ion-item>
-                <ion-label position="floating" color="primary">Email</ion-label>
+                <ion-label position="floating">Email</ion-label>
                 <ion-input type="text" formControlName="email"></ion-input>
               </ion-item>
               <div class="validation-errors">
@@ -43,6 +43,6 @@
               </div>
     </form>
     <div padding="ion-padding">
-      <ion-button expand="block" [routerLink]="['/home']">Send</ion-button>
+      <ion-button expand="block" color="dark" [routerLink]="['/home']">Send</ion-button>
     </div>
 </ion-content>
