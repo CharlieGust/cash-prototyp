@@ -1,39 +1,44 @@
 <ion-header>
-    <ion-toolbar color="medium">
-      <ion-title>Dashboard</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
+  <ion-toolbar color="light">
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content>
-  <ion-card class="menu" (click)="onSubmit()" color="light">      
-      <img src="/assets/taxfree.jpg" alt="" />
-        <ion-card-content>
-            <p>Lists all products that are duty free, click on a product to view QR-code!</p>
-          </ion-card-content>
-          <ion-card-subtitle text-right>Get TaxFree
-              <ion-icon name="arrow-dropright-circle"></ion-icon>
-          </ion-card-subtitle>
+  <ion-card class="menu" (click)="onSubmit()" color="light">
+    <img src="/assets/dutyfree.jpg" alt="" />
+    <ion-card-content>
+      <p>
+        Lists all products that are TAXFREE, click on a product to view QR-code!
+      </p>
+    </ion-card-content>
+    <ion-card-subtitle text-right>Get TaxFree
+      <ion-icon name="arrow-dropright-circle"></ion-icon>
+    </ion-card-subtitle>
   </ion-card>
 
-  <ion-card class="menu" (click)="onSubmit()" color="light">      
-      <img src="/assets/inside-the-resturant.jpg" alt="" />
-        <ion-card-content>
-            <p>View our highly regarded resturants</p>
-          </ion-card-content>
-          <ion-card-subtitle text-right>Get resturants
-              <ion-icon name="arrow-dropright-circle"></ion-icon>
-          </ion-card-subtitle>
+  <ion-card class="menu" (click)="onSubmit2()" color="light">
+    <img src="/assets/inside-the-resturant.jpg" alt="" />
+    <ion-card-content>
+      <p>
+        The best food, the best wine, the best experince! Our resturants is top
+        notch!
+      </p>
+    </ion-card-content>
+    <ion-card-subtitle text-right>Get resturants
+      <ion-icon name="arrow-dropright-circle"></ion-icon>
+    </ion-card-subtitle>
   </ion-card>
-  <ion-card class="menu" (click)="onSubmit()" color="light">      
-      <img src="/assets/taxfree.jpg" alt="" />
-        <ion-card-content>
-            <p>Lists all products that are duty free, click on a product to view QR-code!</p>
-          </ion-card-content>
-          <ion-card-subtitle text-right>Get TaxFree
-              <ion-icon name="arrow-dropright-circle"></ion-icon>
-          </ion-card-subtitle>
+  <ion-card class="menu" color="light">
+    <img src="/assets/hotel.jpg" alt="" />
+    <ion-card-content>
+      <p>View hotels ready to be booked right in this app!</p>
+    </ion-card-content>
+    <ion-card-subtitle text-right>Get Hotels
+      <ion-icon name="arrow-dropright-circle"></ion-icon>
+    </ion-card-subtitle>
   </ion-card>
-      <!-- <ion-card class="welcome-card">
+  <!-- <ion-card class="welcome-card">
           <ion-item (click)="onSubmit()">
               <img src="/assets/shapes.svg" alt="" />
               <ion-card-header>
@@ -49,7 +54,7 @@
                 </ion-card-header>
               </ion-item>
           </ion-card> -->
-    <!-- <ion-grid>
+  <!-- <ion-grid>
         <ion-row >
           <ion
             <ion-col class="pane" text-center>

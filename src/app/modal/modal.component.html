@@ -1,35 +1,35 @@
 <ion-header>
-    <ion-toolbar text-center color="medium">
-      <ion-title >{{modalName}}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-content padding>
-    <ion-grid>
-      <ion-row >
-        <ion-col text-center>
-          Original price: {{modalOriginal}}
-        </ion-col>
-        <ion-col>
-          <ion-label color="danger">
+  <ion-toolbar text-center color="light">
+    <ion-title>{{modalName}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        Original price: {{modalOriginal}}
+      </ion-col>
+      <ion-col>
+        <ion-label color="danger">
           Taxfree price: {{modalNew}}
         </ion-label>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col text-center>
-            <img src="/assets/qrkod.jpg" alt="" />
-        </ion-col>
-      </ion-row>
-      <ion-row>
-          <ion-col text-center>
-            Scan QR-code to get TaxFree
-          </ion-col>
-        </ion-row>
-      <ion-row>
-        <ion-col text-center>
-          <ion-button expand="block" (click)="closeModal()" color="dark">Done</ion-button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-content>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <img src="/assets/qrkod.jpg" alt="" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        Scan QR-code to get TaxFree
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <ion-button expand="block" (click)="closeModal()" color="dark">Done</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
